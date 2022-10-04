@@ -30,16 +30,16 @@ h2
     
 }
 .portfolio{
-    background-color: rgba(0,0,0, 0.75);
-    margin: 0px 400px 0 400px;
-    border-radius: 100px;
+    
+    margin: -20px 400px -0px 400px;
 }
 
 .fp
 {
-    background-color: rgba(0,0,0, 0.75);
+    /* background-color: rgba(0,0,0, 0.0); */
     margin: 10px 50px 0 50px;
-    border-radius: 100px;
+    text-align: center;
+    font-weight: bold;
 }
 h4
 {
@@ -128,8 +128,8 @@ header nav ul li a
 
 #main-image
 {
-    height: 580px;
-    background: url('images/b6114af1787609a81a4d9e67f9839b68f63f1b69.jpg') center;
+    height: 720px;
+    background: url('images/matthieu-huguet-highresscreenshot00010.jpg') center;
 }
 #main-image h2
 {
@@ -164,7 +164,7 @@ header nav ul li a
     text-align: center;
     border-radius: 100px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
