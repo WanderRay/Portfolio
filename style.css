@@ -26,6 +26,11 @@ h2
     font-size: 46px;
     
 }
+
+h3{
+    font-size: 30px;
+    color: #444;
+}
 .title-matthieu{
     
 }
@@ -36,10 +41,10 @@ h2
 
 .fp
 {
-    /* background-color: rgba(0,0,0, 0.0); */
-    margin: 10px 50px 0 50px;
-    text-align: center;
-    font-weight: bold;
+    /* background-color: rgba(0,0,0, 0.0); text :
+    Bonjour et bienvenue sur mon site web, vous pouvez trouver tous mes travaux ici. <br>N'hésitez pas à y jeter un coup d'œil ou à me faire part de commentaires si vous avez le temps.
+    <br>Vous pouvez également me contacter directement dans la section prévue à cet effet. Bonne visite !
+    */
 }
 h4
 {
@@ -47,6 +52,7 @@ h4
     font-weight: bold;
     color: #FFF;
 }
+
 p
 {
     line-height: 20px;
@@ -66,7 +72,7 @@ a
 
 a:hover
 {
-    color: #dcb243;
+    color: #0070CC;
 }
 
 .wrapper
@@ -77,9 +83,9 @@ a:hover
 
 }
 
-.gold
+.blue
 {
-    color: #dcb243;
+    color: #0070CC;
 }
 .clear{
     clear: both;
@@ -95,6 +101,7 @@ small{
 header
 {
     height: 120px;
+    background-color: #EFEFEF
     
 }
 
@@ -156,7 +163,7 @@ header nav ul li a
     display: block;
     width: 120px;
     height: 40px;
-    background: #FFF;
+    background: #EFEFEF;
     color: #000;
     font-size: 16px;
     margin: 0 auto;
@@ -170,23 +177,23 @@ header nav ul li a
 
 .button-1:hover
 {
-    background: #dcb243;
-    color: #000;
+    background: #0070CC;
+    color: #FFF;
 }
 
 /* Projets */
 
+
 #projets ul
 {
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 #projets ul li
 {
     width: 300px;
     height: 100px;
-    max-height: 300px;
-    max-width: 300px;
-    padding-top: 180px;
+    padding-top: 200px;
     text-align: center;
     float: left;
     margin-right: 10px;
@@ -197,6 +204,7 @@ header nav ul li a
 {
     transform: scale(1.05, 1.05);
     transition: transform 0.2s;
+    color: #FFF;
 }
 #projets h4
 {
@@ -207,20 +215,20 @@ header nav ul li a
 {
    background: url('images/8c539e65fee8b44d33106f134a5f05cf3897cbee.jpg') no-repeat top center;
     background-size:contain;
-    background-color: #52278A;
+    background-color: #0070CC;
     
 }
 #projet-2
 {
     background: url('images/255bd8ebbf5f439c2b9194d3860744af432200dd.jpg') no-repeat top center;
     background-size:contain;
-    background-color: #7850A8;
+    background-color: #0070CC;
 }
 #projet-3
 {
     background: url('images/4162b3a57923c7cb5cdc0a806d8edc2e255d3018.jpg') no-repeat top center;
     background-size:contain;
-    background-color: #AE98D7;
+    background-color: #0070CC;
 }
 .p-text{
     color: #FFF;
@@ -231,7 +239,7 @@ header nav ul li a
 
 #social-networks{
     background-color: #EFEFEF;
-    padding: 60px 0;
+    padding: 25px 0;
 }
 
 #social-networks article{
@@ -248,13 +256,6 @@ header nav ul li a
 .overlay{
 }
 
-article .overlay:hover{
-    background:rgba(255,255,255, 0.85);
-    transform:  translateX(230px);
-    transition: transform 1.2s ease-in-out;
-    border-radius: 0px 20px 20px 0px;
-    
-}
 
 article .overlay{
     
@@ -262,9 +263,13 @@ article .overlay{
     height: 100%;
     width: 230px;
     padding: 10px;
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px 20px 20px 20px;
     text-align: center;
     box-sizing: border-box;
+}
+
+article .overlay:hover{
+    background:rgba(255,255,255, 0.80);
 }
 
 
@@ -297,12 +302,85 @@ article h4{
     font-weight: bold;
 }
 .button-2:hover{
-    background-color: #dcb243;
-    color: #000;
+    background: #0070CC;
+    color: #FFF;
+}
+
+
+
+/* Contact */
+
+#contact{
+    padding: 25px 0;
+    text-align: center;
+}
+
+#contact h3{
+    width: 600px;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+    border-bottom: 1px solid #0070CC;
+    padding-bottom: 20px;
+}
+
+form{
+    margin: 20px 0 20px 0;
+}
+
+label{
+    margin: 10px auto;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+    color: #777;
+}
+
+input[type="text"]{
+    width: 250px;
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid #0070CC;
+    border-radius: 100px;
+}
+
+.button3{
+    
+    margin-top: 20px;
+    color: #0070CC;
+    background: #EFEFEF;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 100px;
+    border : 2px solid #0070CC;
+}
+
+.button3:hover{
+    color: #FFF;
+    background: #0070CC;
 }
 
 /* footer */
-.footer{
-    text-align: center
+
+footer{
+    padding: 80px;
+    background-color: #777
 }
+
+footer h1{
+    color: #FFF;
+    text-align: center;
+}
+
+.copyright{
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    
+}
+
+
+
+
+
 
